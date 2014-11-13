@@ -1,0 +1,28 @@
+{
+  "host": "127.0.0.1",
+  "port": "8100",
+  "path": "/Applications/MAMP/htdocs/POC/libsass",
+  "name": "libsass",
+  "version": "0.0.0",
+  "description": "Test case for LibSass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "libsass",
+    "ruby",
+    "sass"
+  ],
+  "author": "Gregory Van Looy",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-http-server": "^1.0.2",
+    "grunt-open": "^0.2.3",
+    "grunt-sass": "^0.16.1",
+    "node-sass": "~1.2.2"
+  }
+}
