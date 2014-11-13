@@ -14,9 +14,9 @@ You'll need to have the following items installed before continuing.
 Run local dev site: `grunt`
 Note: change `http-server.dev.root` in `Gruntfile.js` to your `PATH`
 
-Libsass : `grunt libsass`
+In a new Terminal window, Libsass : `grunt libsass`
 
-Ruby Sass: `grunt rubysass`
+In another Terminal window, Ruby Sass: `grunt rubysass`
 
 Now change something in the `.scss` files and compare compile times.
 Should be something like ~10s for Ruby Sass and ~0.6s for Libsass
