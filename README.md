@@ -1,6 +1,6 @@
-# Foundation libsass template
+# Proof of Concept: Libsass vs Ruby Sass
 
-This is a template to start your own project that uses Grunt and libsass!
+Short test case to decide if we should switch to Libsass in upcoming projects for De Persgroep.
 
 ## Requirements
 
@@ -8,22 +8,22 @@ You'll need to have the following items installed before continuing.
 
   * [Node.js](http://nodejs.org): Use the installer provided on the NodeJS website.
   * [Grunt](http://gruntjs.com/): Run `[sudo] npm install -g grunt-cli`
-  * [Bower](http://bower.io): Run `[sudo] npm install -g bower`
 
 ## Quickstart
 
+Run local dev site:
 ```bash
-git clone git@github.com:zurb/foundation-libsass-template.git
-npm install && bower install
+grunt
 ```
+Note: change `http-server.dev.root` in `Gruntfile.js` to your `PATH`
 
-While you're working on your project, run:
+Libsass : `grunt libsass`
+Ruby Sass: `grunt rubysass`
+
+Now change something in the `.scss` files and compare compile times.
+Should be sometjing like ~10s for Ruby Sass and ~0.6s for Libsass
 
 `grunt`
 
 And you're set!
 
-## Directory Structure
-
-  * `scss/_settings.scss`: Foundation configuration settings go in here
-  * `scss/app.scss`: Application styles go here
