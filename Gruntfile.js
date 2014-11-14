@@ -25,7 +25,7 @@ module.exports = function(grunt) {
 				ext: 'html',
 
 				// run in parallel with other tasks
-				runInBackground: true
+				runInBackground: false
 
 			}
 
@@ -58,7 +58,8 @@ module.exports = function(grunt) {
 			dist : {
 				options: {
 				  includePaths: ['bower_components/foundation/scss'],
-				  outputStyle: 'nested' // nested | compressed ('expanded' or 'compact' not supported by Libsass, yet)
+				  outputStyle: 'nested', // nested | compressed ('expanded' or 'compact' not supported by Libsass, yet)
+				  sourceMap: true
 				},
 				files: [{
 					expand: true,
