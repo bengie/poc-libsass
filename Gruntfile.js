@@ -57,7 +57,8 @@ module.exports = function(grunt) {
 		sass: {
 			dist : {
 				options: {
-				  includePaths: ['bower_components/foundation/scss']
+				  includePaths: ['bower_components/foundation/scss'],
+				  outputStyle: 'nested' // nested | compressed ('expanded' or 'compact' not supported by Libsass, yet)
 				},
 				files: [{
 					expand: true,
